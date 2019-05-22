@@ -36,7 +36,7 @@ const createMinedBoard = (rows, columns, minesAmount) => {
 
 const cloneBoard = board => {
   return board.map(row => {
-    return rows.map(field => {
+    return row.map(field => {
       return {...field}
     })
   })
